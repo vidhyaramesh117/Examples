@@ -34,7 +34,9 @@ public class SaveFragment extends Fragment {
 
         Bundle args = getArguments();
 
-        String courseName = args.getString("Name");
+        String courseName="Java";
+
+        courseName = args.getString("Name");
         String courseRating = String.valueOf(args.getInt("Rating",0));
         int courseImage = args.getInt("Image",0);
 

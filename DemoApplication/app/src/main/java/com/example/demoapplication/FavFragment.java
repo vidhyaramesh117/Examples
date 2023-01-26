@@ -62,44 +62,44 @@ public class FavFragment extends Fragment{
         pbBtn2 = (Button) favView.findViewById(R.id.pbBtn2);
         progressBtn1 = (Button) favView.findViewById(R.id.pb2ProgessBtn);
 
-        tabLayout = (TabLayout) favView.findViewById(R.id.tab_layout);
-        viewPager = (ViewPager) favView.findViewById(R.id.view_pager_1);
-
-        //adding tab items
-        tabLayout.addTab(tabLayout.newTab().setText("Settings"));
-        tabLayout.addTab(tabLayout.newTab().setText("preferences"));
-//        tabLayout.addTab(tabLayout.newTab().setText("favourites"));
-        tabLayout.addTab(tabLayout.newTab().setText("Settings1"));
-        tabLayout.addTab(tabLayout.newTab().setText("preferences1"));
-        tabLayout.addTab(tabLayout.newTab().setText("favourites1"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-//        calling function for tab icons
-        setUpTabIcons();
-        tabLayout.setInlineLabel(true);
+//        tabLayout = (TabLayout) favView.findViewById(R.id.tab_layout);
+//        viewPager = (ViewPager) favView.findViewById(R.id.view_pager_1);
+//
+//        //adding tab items
+//        tabLayout.addTab(tabLayout.newTab().setText("Settings"));
+//        tabLayout.addTab(tabLayout.newTab().setText("preferences"));
+////        tabLayout.addTab(tabLayout.newTab().setText("favourites"));
+//        tabLayout.addTab(tabLayout.newTab().setText("Settings1"));
+//        tabLayout.addTab(tabLayout.newTab().setText("preferences1"));
+//        tabLayout.addTab(tabLayout.newTab().setText("favourites1"));
+//        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+////        calling function for tab icons
+//        setUpTabIcons();
+//        tabLayout.setInlineLabel(true);
 
         FragmentManager fm = getFragmentManager();
 
-        final myAdapter adapter = new myAdapter(getContext(),fm,tabLayout.getTabCount());
-        viewPager.setAdapter(adapter);
-
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
-        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
+//        final myAdapter adapter = new myAdapter(getContext(),fm,tabLayout.getTabCount());
+//        viewPager.setAdapter(adapter);
+//
+//        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+//
+//        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+//            @Override
+//            public void onTabSelected(TabLayout.Tab tab) {
+//                viewPager.setCurrentItem(tab.getPosition());
+//            }
+//
+//            @Override
+//            public void onTabUnselected(TabLayout.Tab tab) {
+//
+//            }
+//
+//            @Override
+//            public void onTabReselected(TabLayout.Tab tab) {
+//
+//            }
+//        });
 
         pbBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -182,15 +182,15 @@ public class FavFragment extends Fragment{
 
 
     //    function for tabIcons
-    private void setUpTabIcons() {
-
-        tabLayout.getTabAt(0).setIcon(iconArray[0]);
-        tabLayout.getTabAt(1).setIcon(iconArray[1]);
-        tabLayout.getTabAt(2).setIcon(iconArray[2]);
-        tabLayout.getTabAt(3).setIcon(iconArray[0]);
-        tabLayout.getTabAt(4).setIcon(iconArray[1]);
-
-    }
+//    private void setUpTabIcons() {
+//
+//        tabLayout.getTabAt(0).setIcon(iconArray[0]);
+//        tabLayout.getTabAt(1).setIcon(iconArray[1]);
+//        tabLayout.getTabAt(2).setIcon(iconArray[2]);
+//        tabLayout.getTabAt(3).setIcon(iconArray[0]);
+//        tabLayout.getTabAt(4).setIcon(iconArray[1]);
+//
+//    }
 
 
     public void onBackPressed() {

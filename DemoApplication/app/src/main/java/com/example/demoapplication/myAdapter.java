@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 public class myAdapter extends FragmentPagerAdapter {
 
@@ -23,7 +24,7 @@ public class myAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position){
-            case 0: Fragment f1 = new SettingsFragment();
+            case 0: Fragment f1 = new HomeFragment();
                    return f1;
             case 1: Fragment f2 = new PrefFragment();
                 return f2;

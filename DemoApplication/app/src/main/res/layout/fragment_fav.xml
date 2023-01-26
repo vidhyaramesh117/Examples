@@ -10,8 +10,7 @@
     android:id="@+id/fav">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <include layout="@layout/content_main"/>
+<!--    <include layout="@layout/content_main"/>-->
 
     <ProgressBar
         android:id="@+id/pgBar1"

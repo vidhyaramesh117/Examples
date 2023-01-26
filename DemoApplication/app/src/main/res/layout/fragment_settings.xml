@@ -5,13 +5,15 @@
     android:layout_height="match_parent"
     tools:context=".SettingsFragment"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="#FF9800"
     android:gravity="center">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="settings Fragment" />
+        android:text="settings Fragment"
+        android:layout_gravity="center"
+        />
 
 </LinearLayout>
