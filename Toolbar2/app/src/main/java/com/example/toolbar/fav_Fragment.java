@@ -2,8 +2,6 @@ package com.example.toolbar;
 
 import android.os.Bundle;
 
-import androidx.appcompat.widget.AppCompatCheckBox;
-import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -20,15 +18,13 @@ import android.widget.Toast;
 
 public class fav_Fragment extends Fragment
 {
-    CheckBox ch1, ch2, ch3;
-    AppCompatCheckBox ch4;
+    CheckBox ch1, ch2, ch3, ch4;
     Button button;
     TextView toasttext;
     RadioGroup radioGroup;
     TextView radiotext;
     Switch swit;
-    SwitchCompat appswit;
-    TextView swittext,appswittext;
+    TextView swittext;
 
     View rootview;
 
@@ -42,10 +38,7 @@ public class fav_Fragment extends Fragment
         radiotext = rootview.findViewById(R.id.radio_tv);
         swit = rootview.findViewById(R.id.swit);
         swittext = rootview.findViewById(R.id.swit_tv);
-        appswit = rootview.findViewById(R.id.appcompact_swit);
-        appswittext = rootview.findViewById(R.id.appcompact_swit_tv);
 
-//        radio button
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
             @Override
@@ -56,7 +49,6 @@ public class fav_Fragment extends Fragment
             }
         });
 
-//        switch
         if(swit.isChecked())
         {
             swittext.setText("Online");
@@ -83,34 +75,10 @@ public class fav_Fragment extends Fragment
             }
         });
 
-        if(appswit.isChecked())
-        {
-            swittext.setText("Last seen on");
-        }
-        else
-        {
-            swittext.setText("Last seen off");
-        }
-        appswit.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
-        {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b)
-            {
-                if(appswit.isChecked())
-                {
-                    swittext.setText("Last seen on");
-                }
-                else
-                {
-                    swittext.setText("Last seen off");
-                }
-            }
-        });
         return rootview;
 
     }
 
-//    checkbox
     private void addListenerOnButtonClick()
     {
 

@@ -7,4 +7,6 @@
     android:id="@+id/act_broad"
     tools:context=".activity_new_broadcast">
 
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

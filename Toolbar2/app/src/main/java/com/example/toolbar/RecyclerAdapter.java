@@ -14,13 +14,16 @@ import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Viewholder>
 {
-    private final Context context;
+    private  Context context;
     private ArrayList<recycler_model>recyclerModelArrayList = null;
 
     public RecyclerAdapter(Context context, ArrayList<recycler_model> recyclerModelArrayList)
     {
         this.context = context;
         this.recyclerModelArrayList = recyclerModelArrayList;
+    }
+
+    public RecyclerAdapter(ArrayList<String> arrayList, ItemClickListener itemClickListener) {
     }
 
     @NonNull
