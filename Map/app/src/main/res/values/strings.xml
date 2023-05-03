@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Map</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDZLDFCVEuSq3hkJzOjxNijstozO2VujOg</string>
+    <string name="i_am_here">I am here</string>
+    <string name="provider_failed">Provider Failed</string>
+</resources>
